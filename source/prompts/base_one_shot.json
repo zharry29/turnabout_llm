@@ -1,0 +1,4 @@
+{
+    "prefix": "You are provided with a list of characters, evidences and testimonies.\nWhich evidence and testimony contradict each other? You must only answer one pair. You may output an explanation, but your answer must end with a JSON format like so: {{\"evidence\": 2, \"testimony\": 3}}. The answer JSON should strictly be the last line, followed by nothing else.\nExample:\n{example_one_shot}\nQuestion:",
+    "suffix" : "Answer:"
+}

@@ -1,0 +1,4 @@
+{
+    "prefix": "You are provided with a list of characters, evidences and testimonies.\n",
+    "suffix" : "Which evidence and testimony contradict each other? You must only answer one pair. You may output an explanation, but your answer must end with a JSON format like so: {\"evidence\": 2, \"testimony\": 3}. The answer JSON should strictly be the last line, followed by nothing else. Let's think step by step:"
+}
