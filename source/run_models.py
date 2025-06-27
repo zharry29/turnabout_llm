@@ -76,15 +76,20 @@ def build_prompt_prefix_suffix(prompt_arg):
         prompt_suffix = data['suffix']
 
     # Load cot examples
-    if "one_shot" in prompt_arg:
+    if "base_one_shot" in prompt_arg: # base one shot
         with open("prompts/example_one_shot.txt", "r") as file:
             example_one_shot = file.read()
         prompt_prefix = prompt_prefix.format(example_one_shot=example_one_shot)
 
-    elif "few_shot" in prompt_arg:
-        with open("prompts/example_few_shot.txt", "r") as file:
-            example_few_shot = file.read()
-        prompt_prefix = prompt_prefix.format(example_few_shot=example_few_shot)
+    elif "cot_one_shot" in prompt_arg:
+        with open("prompts/exampe_one_shot_cot.txt", "r") as file:
+            example_one_shot_cot = file.read()
+        prompt_prefix = prompt_prefix.format(example_one_shot_cot=example_one_shot_cot)
+
+    # elif "few_shot" in prompt_arg:
+    #     with open("prompts/example_few_shot.txt", "r") as file:
+    #         example_few_shot = file.read()
+    #     prompt_prefix = prompt_prefix.format(example_few_shot=example_few_shot)
 
     return prompt_prefix, prompt_suffix
 

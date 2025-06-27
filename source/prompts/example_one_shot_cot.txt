@@ -43,4 +43,7 @@ Testimony 4: I was on my hands and knees, investigating the where-abouts of my m
 Person: Korekuta
 
 Answer:
+Let's think step by step:
+Let's analyze the evidence and testimonies provided.
+Testimony 3 states that the gun shot was fired "from the back". However, Evidence 0, which is "Post-Mortem Report," states that the victim died "from a gunshot to the chest", which implies that the witness is lying.
 {"evidence": 0, "testimony": 3}
