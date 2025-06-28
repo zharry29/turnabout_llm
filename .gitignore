@@ -15,3 +15,8 @@ __pycache__/
 test.py
 
 legacy/
+
+# scripts
+stats.sh
+visualize.py
+create_csv.py
