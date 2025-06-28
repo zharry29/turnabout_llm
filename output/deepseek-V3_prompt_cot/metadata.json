@@ -1,0 +1,9 @@
+{
+  "model": "deepseek-V3",
+  "prompt": "cot",
+  "context": "none",
+  "case": "all",
+  "no_description": false,
+  "data": "aceattorney",
+  "timestamp": "20250627_173720"
+}

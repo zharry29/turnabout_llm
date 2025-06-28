@@ -10,16 +10,26 @@ def get_eval_data(output_root_dir):
             parts = output.split("_")
             model, prompt, context, description = "", "", "", ""
             model = parts[0]
-            if len(parts) > 2 and parts[1] == "prompt":  # Extract prompt
-                prompt = parts[2]
+            prompt_idx_end = -1
+            # parse context
             if "context" in parts:
-                context = parts[parts.index("context") + 1]
+                prompt_idx_end = parts.index("context")
+                context = parts[prompt_idx_end + 1]
             else:
                 context = "none"
+            # parse description
             if "desc" in parts:  # Only exist if no description
                 description = "false"
+                if prompt_idx_end == -1:
+                    prompt_idx_end = parts.index("desc")
             else:
                 description = "true"
+            # parse prompt
+            if "prompt" in parts:
+                prompt_idx_start = parts.index("prompt")
+                prompt = " ".join(parts[prompt_idx_start + 1: prompt_idx_end])
+                print(prompt)
+            # parse case
             if "case" in parts:
                 case = parts[parts.index("case") + 1]
             else:

@@ -6,6 +6,6 @@ echo "Creating csv..."
 python create_csv.py
 
 echo "Visualizing..."
-python visualize.py
+# python visualize.py
 
 echo "Done!"
