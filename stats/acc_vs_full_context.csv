@@ -1,0 +1,6 @@
+model,base_accuracy,full_context_accuracy,diff
+deepseek-reasoner,0.4572,0.5279,0.07070000000000004
+gpt-4.1,0.3609,0.4572,0.0963
+gpt-4.1-mini,0.2305,0.2305,0.0
+llama-3.1-8b,0.1041,0.0781,-0.025999999999999995
+llama-3.1-70b,0.2519,0.2025,-0.0494
